@@ -152,13 +152,10 @@ header h1 {
 
 
 /*MAIN*/
-main {
-    padding: var(--site-padding);
-}
-
 main > * {
-    margin: 6em 0em 6em 0em;
-    border-bottom: var(--black-colour) 0.3em solid ;
+    margin: 2em 0em 2em 0em;
+    /* padding: 2em 0em 2em 0em; */
+    border: var(--black-colour) 0.2em solid ;
 }
 
 .gallery {
@@ -169,7 +166,9 @@ main > * {
 }
 
     /* LOGO */
-        .logo {
+        #logo {
+            padding: var(--site-padding);
+
             display: grid;
             grid-template-columns: 1.4fr 0.8fr;
             gap: 2em;
@@ -185,14 +184,19 @@ main > * {
 
 
     /* COLOUR */
-        .colour .gallery {
+        #colour {
+            padding: var(--site-padding);
+            background-color: var(--pearl-colour);
+        }
+
+        #colour .gallery {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1em;
             height: auto;
         }
 
-        .colour h4 {
+        #colour h4 {
             /* margin: 40% 5% 5% 5%; */
             left: 20%;
             bottom: 20%
@@ -215,34 +219,73 @@ main > * {
         }
 
 
+
         /* TYPOGRAPHY */
-        .type {
-            
+        #type {
+            padding: var(--site-padding);
         }
 
-/* .dailycards {
-    display: block;
-    min-height: 10em;
-}
+        #type-info > * {
+            margin: 2em 0em 2em 0em;
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 2em;
+        }
 
-.dailycards img {
-    max-height: auto;
-    width: 100%;
-}
 
-#details {
-    display: flex;
-}
 
-#details img {
-    height: 30em;
-}
+        /* GRIDS */
+        #grid {
+            padding: var(--site-padding);
+            background-color: var(--pearl-colour);
+        }
 
-#details p {
-    overflow: scroll;
-    text-overflow: clip;
-    min-height: 20em;
-} */
+
+
+        /* BUTTONS & LINKS */
+        #button-link {
+            padding: var(--site-padding);
+        }
+
+
+
+        /* ICONOGRAPHY */
+        #icon {
+            padding: var(--site-padding);
+            background-color: var(--pearl-colour);
+
+        }
+
+
+
+        /* Components, patterns, alerts, & modals */
+        #comp {
+            padding: var(--site-padding);
+        }
+
+
+
+        /* DISPLAY CARDS */
+        #cards {
+            padding: var(--site-padding);
+            /* display: block;
+            min-height: 10em; */
+            background-color: var(--pearl-colour);
+
+        }
+
+        /* #cards img {
+            max-height: auto;
+            width: 100%;
+        } */
+
+
+
+        /* ELEMENTS */
+        #elements {
+            padding: var(--site-padding);
+        }
+
 
 
 /*FOOTER*/
