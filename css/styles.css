@@ -60,23 +60,46 @@ h6 {
 }
 
 /* Link colour when not hovering*/
-button a:link {
-    color: rgb(32, 32, 32);
+a button:link {
+    color: var(--pink-colour);
 }
 
 /* Link colour of a visited link*/
-button a:visited {
+a button:visited {
     color: grey;
 }
 
 /*Link colour when hovering*/
-button a:hover {
+a button:hover {
     color: rgb(104, 104, 104);
+    padding: 0.92em;
 }
 
-/*Link colour when clicked*/
-button a:active {
+/* Link colour when clicked
+a button:active {
     color: darkblue;
+} */
+
+button {
+    font-family: "Nanum Myeongjo", serif;
+    padding: 1em;
+    border: none;
+}
+
+.signup-button {
+    background-color: var(--pink-colour);
+    min-width: 8em;
+    border: none;
+}
+
+.addtobag-button {
+    min-width: 8em;
+    color: white;
+    background-color: var(--black-colour);
+}
+
+.textlinkbutton {
+    background-color: none;
 }
 
 
@@ -155,7 +178,7 @@ header h1 {
 main > * {
     margin: 2em 0em 2em 0em;
     /* padding: 2em 0em 2em 0em; */
-    border: var(--black-colour) 0.2em solid ;
+    /* border: var(--black-colour) 0.2em solid ; */
 }
 
 .gallery {
@@ -261,6 +284,14 @@ main > * {
         /* Components, patterns, alerts, & modals */
         #comp {
             padding: var(--site-padding);
+        }
+
+        #nav-comp {
+            position: relative;
+            z-index: 0;
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
 
 
