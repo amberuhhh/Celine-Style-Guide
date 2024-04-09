@@ -16,13 +16,6 @@ body {
     font-family: "Playfair Display SC", serif;
 }
 
-p {
-    font-family: "Nanum Myeongjo", serif;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
-}
-
 h1 {
     font-size: 2.99em;
     margin: 0.4em 0em 0.4em 0em;
@@ -59,48 +52,63 @@ h6 {
     padding: 0;
 }
 
-/* Link colour when not hovering*/
-a button:link {
-    color: var(--pink-colour);
+p {
+    font-family: "Nanum Myeongjo", serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
 }
 
-/* Link colour of a visited link*/
-a button:visited {
-    color: grey;
+p small {
+    font-size: 0.80em;
+    /* padding-bottom: 20em; */
 }
 
-/*Link colour when hovering*/
-a button:hover {
-    color: rgb(104, 104, 104);
-    padding: 0.92em;
-}
 
-/* Link colour when clicked
-a button:active {
-    color: darkblue;
-} */
 
 button {
     font-family: "Nanum Myeongjo", serif;
     padding: 1em;
     border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    color: rgb(104, 104, 104);
 }
 
 .signup-button {
     background-color: var(--pink-colour);
-    min-width: 8em;
+    min-width: 14em;
     border: none;
 }
 
-.addtobag-button {
-    min-width: 8em;
+.addtobag-button, .nextpage-button {
+    min-width: 14em;
     color: white;
     background-color: var(--black-colour);
 }
 
-.textlinkbutton {
-    background-color: none;
+#nextpage-button {
+    text-align: center;
+    margin: 3em 0 1em 0;
 }
+
+.textlinkbutton {
+    padding: 0;
+    font-size: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+.textlinkbutton:hover {
+    color: var(--pink-colour);
+}
+
+
+
 
 
 /*NAVIGATION*/
@@ -164,7 +172,7 @@ nav img {
 header {
     height: 50%;
     /* padding: 5em 10em 5em 10em; */
-    padding: 5% 10% 5% 10%;
+    padding: 8% 10em 8% 10em;
     background-color: var(--pink-colour);
 }
 
@@ -175,10 +183,12 @@ header h1 {
 
 
 /*MAIN*/
+main {
+    display: block;
+}
+
 main > * {
     margin: 2em 0em 2em 0em;
-    /* padding: 2em 0em 2em 0em; */
-    /* border: var(--black-colour) 0.2em solid ; */
 }
 
 .gallery {
@@ -191,13 +201,12 @@ main > * {
     /* LOGO */
         #logo {
             padding: var(--site-padding);
-
             display: grid;
             grid-template-columns: 1.4fr 0.8fr;
             gap: 2em;
         }
 
-        .gallery img {
+        #logo .gallery img {
             max-height: 10em;
             width: 100%;
             object-fit: contain;
@@ -216,29 +225,32 @@ main > * {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 1em;
-            height: auto;
         }
 
-        #colour h4 {
-            /* margin: 40% 5% 5% 5%; */
-            left: 20%;
-            bottom: 20%
+        #colour .gallery ol {
+            padding-left: 4%;
+            list-style: none;
+        }
+
+        #colour .gallery div div {
+            height: 10em;
+            margin-bottom: 1em;
         }
 
         .colour-box-pink {
             background-color: var(--pink-colour);
-            height: 10em;
+            border: 0.1em solid var(--black-colour);
         }
 
         .colour-box-pearl {
             background-color: var(--pearl-colour);
-            height: 10em;
+            border: 0.1em solid var(--black-colour);
         }
 
         .colour-box-black {
             background-color: var(--black-colour);
-            height: 10em;
             color: white;
+            border: 0.1em solid var(--black-colour);
         }
 
 
@@ -251,9 +263,144 @@ main > * {
         #type-info > * {
             margin: 2em 0em 2em 0em;
             display: grid;
-            grid-template-columns: 1.4fr 0.8fr;
+            grid-template-columns: 1.2fr 0.8fr;
             gap: 2em;
         }
+
+
+            /* DESKTOP TYPE SIZE */
+            #desktop h1 {
+                font-size: 2.99em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop h2 {
+                font-size: 2.49em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop h3 {
+                font-size: 2.07em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop h4 {
+                font-size: 1.73rem;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop h5 {
+                font-size: 1.44rem;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop h6 {
+                font-size: 1.2rem;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #desktop p {
+                font-family: "Nanum Myeongjo", serif;
+                font-size: 1em;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            /* TABLETS TYPE SIZE */
+            #tablets h1 {
+                font-size: 2.80em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #tablets h2 {
+                font-size: 2.33em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #tablets h3 {
+                font-size: 1.94em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #tablets h4 {
+                font-size: 1.62rem;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #tablets h5 {
+                font-size: 1.35rem;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #tablets h6 {
+                font-size: 1.13rem;
+                margin: 0;
+                padding: 0;
+            }
+        
+            #tablets p {
+                font-family: "Nanum Myeongjo", serif;
+                font-size: 0.94rem;
+                margin: 0;
+                padding: 0;
+            }
+
+
+            /* MOBILE TYPE SIZE */
+            #mobile h1 {
+                font-size: 2.61em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mobile h2 {
+                font-size: 2.18em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mobile h3 {
+                font-size: 1.81em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mobile h4 {
+                font-size: 1.51em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mobile h5 {
+                font-size: 1.26em;
+                margin: 0;
+                padding: 0;
+            }
+            
+            #mobile h6 {
+                font-size: 1.05em;
+                margin: 0;
+                padding: 0;
+            }
+        
+            #mobile p {
+                font-family: "Nanum Myeongjo", serif;
+                font-size: 0.88rem;
+                margin: 0;
+                padding: 0;
+            }
 
 
 
@@ -263,11 +410,27 @@ main > * {
             background-color: var(--pearl-colour);
         }
 
+        #grid-wrapper {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 2em;
+        }
+
+        #grid-wrapper img {
+            width: 100%;
+        }
+
 
 
         /* BUTTONS & LINKS */
         #button-link {
             padding: var(--site-padding);
+        }
+
+        #button-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin: 2em 0 2em 0;
         }
 
 
@@ -276,7 +439,6 @@ main > * {
         #icon {
             padding: var(--site-padding);
             background-color: var(--pearl-colour);
-
         }
 
 
@@ -284,6 +446,11 @@ main > * {
         /* Components, patterns, alerts, & modals */
         #comp {
             padding: var(--site-padding);
+            
+        }
+
+        #comp-item-wrapper > div {
+            margin: 1em 0 3em 0;
         }
 
         #nav-comp {
@@ -294,21 +461,48 @@ main > * {
             width: 100%;
         }
 
+        #footer-comp {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 6em;
+            min-height: 16em;
+            text-align: start;
+        }
+
+        #footer-comp * {
+            margin-top: 1em;
+            padding: 0;
+        }
+
+        #footer-comp ol a {
+            margin: 0;
+            font-size: inherit;
+            display: block;
+            line-height: 2.4em;
+            list-style: none;
+            text-decoration: none;
+            color: var(--black-colour);
+        }
+
 
 
         /* DISPLAY CARDS */
         #cards {
             padding: var(--site-padding);
-            /* display: block;
-            min-height: 10em; */
-            background-color: var(--pearl-colour);
-
+            background-color: var(--pearl-colour); 
         }
 
-        /* #cards img {
-            max-height: auto;
+        #cards-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 4em;
+            justify-content: space-between;
+            margin: 1em 0 3em 0;
+        }
+
+        #cards img {
+            height: auto;
             width: 100%;
-        } */
+        }
 
 
 
@@ -317,23 +511,38 @@ main > * {
             padding: var(--site-padding);
         }
 
+        input {
+            min-width: 24em;
+            height: 2em;
+            background-color: var(--pearl-colour);
+            border: none;
+        }
+
+        #elements-wrapper {
+            display: block;
+        }
+
+
 
 
 /*FOOTER*/
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 6em;
-    min-height: 16em;
-    text-align: start;
+    grid-template-columns: 1fr 1fr;
     padding: var(--site-padding);
     background-color: var(--pearl-colour);
 }
 
+footer * {
+    margin-top: 1em;
+    padding: 0;
+}
+
 footer ol a {
+    margin: 0;
     display: block;
-    line-height: 2.4em;
-    list-style: none;
+    font-size: 1.50em;
+    line-height: 2em;
     text-decoration: none;
     color: var(--black-colour);
 }
@@ -356,6 +565,54 @@ footer ol a {
     :root {
         --site-padding: 0.5em 4em 0.5em 4em;
     }
+    
+    h1 {
+        font-size: 2.80em;
+        margin: 0.4em 0em 0.4em 0em;
+        padding: 0;
+    }
+    
+    h2 {
+        font-size: 2.33em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h3 {
+        font-size: 1.94em;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h4 {
+        font-size: 1.62rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h5 {
+        font-size: 1.35rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h6 {
+        font-size: 1.13rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-family: "Nanum Myeongjo", serif;
+        font-size: 0.94rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    p small {
+        font-size: 0.74em;
+    }
+
     main {
         display: block;
     }
@@ -397,6 +654,10 @@ footer ol a {
         cursor: pointer;
     }
 
+    header {
+        padding: 12% 3em 16% 3em;
+    }
+
     .colour .gallery {
         display: grid;
         grid-template-columns: 1fr;
@@ -408,9 +669,18 @@ footer ol a {
         height: 8em;
     }
 
-    /* .dailycards img {
+    #footer-comp {
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+    }
+
+    .cards img {
         height: auto;
-    } */
+    }
+
+    footer ol a {
+        font-size: 1.4em;
+    }
 
 }
 
@@ -420,25 +690,85 @@ footer ol a {
     :root {
         --site-padding: 0.4em 1em 0.4em 1em;
     }
-
+    
     h1 {
-        font-size: 1.875em;
+        font-size: 2.61em;
+        margin: 0.4em 0em 0.4em 0em;
+        padding: 0;
     }
     
     h2 {
-        font-size: 1.625em;
+        font-size: 2.18em;
+        margin: 0;
+        padding: 0;
     }
     
     h3 {
-        font-size: 1.25em;
+        font-size: 1.81em;
+        margin: 0;
+        padding: 0;
     }
     
+    h4 {
+        font-size: 1.51rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h5 {
+        font-size: 1.26rem;
+        margin: 0;
+        padding: 0;
+    }
+    
+    h6 {
+        font-size: 1.05rem;
+        margin: 0;
+        padding: 0;
+    }
+
     p {
-        font-size: 1em;
+        font-family: "Nanum Myeongjo", serif;
+        font-size: 0.88rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    p small {
+        font-size: 0.68em;
     }
 
     nav {
         padding: 0.375em;
+    }
+
+    header {
+        padding: 8% 2em 16% 2em;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    #logo .gallery img {
+        max-height: 4em;
+    }
+
+    #colour .gallery {
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    #colour .gallery div {
+        margin-bottom: 3em;
+    }
+
+    #colour .gallery div div {
+        height: auto;
+    }
+
+    #type-info > * {
+        display: block;
     }
 
     footer {
