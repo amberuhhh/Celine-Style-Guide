@@ -123,6 +123,22 @@ button:hover {
     color: var(--black-colour);
 }
 
+.colour-box-pink {
+    background-color: var(--pink-colour);
+    border: 0.1em solid var(--black-colour);
+}
+
+.colour-box-pearl {
+    background-color: var(--pearl-colour);
+    border: 0.1em solid var(--black-colour);
+}
+
+.colour-box-black {
+    background-color: var(--black-colour);
+    color: white;
+    border: 0.1em solid var(--black-colour);
+}
+
 
 
 
@@ -250,22 +266,6 @@ main > * {
         #colour .gallery div div {
             height: 10em;
             margin-bottom: 1em;
-        }
-
-        .colour-box-pink {
-            background-color: var(--pink-colour);
-            border: 0.1em solid var(--black-colour);
-        }
-
-        .colour-box-pearl {
-            background-color: var(--pearl-colour);
-            border: 0.1em solid var(--black-colour);
-        }
-
-        .colour-box-black {
-            background-color: var(--black-colour);
-            color: white;
-            border: 0.1em solid var(--black-colour);
         }
 
 
