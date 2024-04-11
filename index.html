@@ -25,10 +25,11 @@
     <header>
         <h1>Celine Style Guide</h1>
         <div>
-            <h3>Basic explanation of this style guide.</h3>
-                <p>"Include an opening description and purpose for your styleguide with animation. 
-                    Include brief descriptions for each section and how elements andrules should be 
-                    applied or used within the design system".</p>
+                <p>This style guide for the Celine fashion brand website redesign encapsulates the brand's ethos of timeless 
+                    elegance, sophistication, and modern minimalism. Through careful attention to typography, color, imagery, 
+                    and user interface design, the revamped website aims to deliver a premium digital experience that resonates
+                     with Celine's discerning clientele, while setting new standards for luxury fashion in the digital realm.
+                </p>
         </div>
     </header>
 
@@ -36,10 +37,11 @@
         <div id="logo">
             <div>
                 <h3>Logo</h3>
-                <p>Logo/branding section. Include logo rules and dimensions.</p>
+                <p>Celines logo in the navigation and footer are to have a height of 2.4em.</p>
+                <p>Rules are to have a 1em clear padding around the logo. Must never be another colour other than black and white.</p>
             </div>
             <div class="gallery">
-                <img src="images/celine-logo.png">
+                <img src="images/celine-logo.png" style=background-color:white>
                 <img src="images/celine-logo-black-try.png" class="colour-box-black">
             </div>
         </div>
@@ -47,21 +49,9 @@
         <div id="colour">
             <div>
                 <h3>Colour Pallette</h3>
-                <!-- <p>Include colour rules with Hex, RGB and CMYKvalues. Identify each colours usage.</p> -->
+                <!-- <p>Include colour rules with Hex, RGB and CMYK values. Identify each colours usage.</p> -->
             </div>
             <div class="gallery">
-                <div>
-                    <div class="colour-box-pink">
-                        <ol>
-                            <h4>Salmon</h4>
-                            <li>#EC9FA7</li>
-                            <li>rgb(236,159,167)</li>
-                            <li>cmyk(0,33,29,7)</li>
-                        </ol>
-                    </div>
-                        <p>This is rules and usage</p>
-                </div>
-
                 <div>
                     <div class="colour-box-pearl">
                         <ol>
@@ -71,7 +61,7 @@
                             <li>cmyk(0,0,2,4)</li>
                         </ol>
                     </div>
-                        <p>This is rules and usage</p>
+                        <p>The Pearl white would be used for slight background changes or slight focused items, such as the navigation and footer.</p>
                 </div>
 
                 <div>
@@ -83,24 +73,39 @@
                             <li>cmyk(0,0,0,89)</li>
                         </ol>
                     </div>
-                        <p>This is rules and usage</p>
+                        <p>The Ink black would be used for prominent actions, such as adding to shopping bag or purchase.</p>
+                </div>
+
+                <div>
+                    <div class="colour-box-pink">
+                        <ol>
+                            <h4>Salmon</h4>
+                            <li>#EC9FA7</li>
+                            <li>rgb(236,159,167)</li>
+                            <li>cmyk(0,33,29,7)</li>
+                        </ol>
+                    </div>
+                        <p>The Salmon pink would be used for secondary actions, such as signing up for the newspaper.</p>
                 </div>
             </div>
+            
         </div>
 
         <div id="type">
             <div>
                 <h3>Typography</h3>
-                <p>Include all type rules with type scale (h1–h6, p) andunit conversions with line-heights, 
-                    spacing, and length rules.</p>
+                <p>Heading 1's would be used sparringly, as a page title or product name. Use the Playfair Display SC Bold Font.</p>
+                <p>Heading 2's would be used as subheadings, introducing new sections.  Use the Playfair Display SC Bold Font.</p>
+                <p>Heading 3's would be used for introducing subsections within a section.Use the Playfair Display SC Bold Font.</p>
+                <p>Heading 4's would be used as product titles on the home when in product cards (Shown on <a href="more.html"><button class="textlinkbutton">More Page</button></a>). Use the Playfair Display SC Bold Font.</p>
+                <p>Heading 5's would be used for description headers, used within long informatin text. Use the Playfair Display SC Bold Font.</p>
+                <p>Heading 6's would be used for price, using the Playfair Display SC Bold Font.</p>
+                <p>Paragraphs would be used for long information texts, ingredients/descriptions. A line height of 1.4em, margin top & bottom 0.5em, using the Nanum Myeongjo Regular font.</p>
             </div>
             <div id="type-info">
-                <div>
-                    <div>
-                        <h2>Desktop</h2>
-                        <p>This is the rules </p>
-                    </div>
                     <div id="desktop">
+                        <h2>Desktop</h2>
+
                         <h1>Heading 1</h1>
                             <p><small>47.78px, 2.99em, 299%</small></p>
                         <h2>Heading 2</h2>
@@ -116,14 +121,9 @@
                         <p>Paragraph</p>
                             <p><small>16px, 1em, 100%</small></p>
                     </div>
-                </div>
-        <hr>
-                <div>
-                    <div>
-                        <h2>Tablets & IPads</h2>
-                        <p>This is the rules </p>
-                    </div>
                     <div id="tablets">
+                        <h2>Tablets & IPads</h2>
+
                         <h1>Heading 1</h1>
                             <p><small>44.79px, 2.80em, 280%</small></p>
                         <h2>Heading 2</h2>
@@ -139,14 +139,9 @@
                         <p>Paragraph</p>
                             <p><small>15px, 0.94em, 94%</small></p>
                     </div>
-                </div>
-        <hr>
-                <div>
-                    <div>
-                        <h2>Mobile</h2>
-                        <p>This is the rules </p>
-                    </div>
                     <div id="mobile">
+                        <h2>Mobile</h2>
+
                         <h1>Heading 1</h1>
                             <p><small>41.8px, 2.61em, 261%</small></p>
                         <h2>Heading 2</h2>
@@ -162,23 +157,25 @@
                         <p>Paragraph</p>
                             <p><small>14px, 0.88em, 88%</small></p>
                     </div>
-                </div>
             </div>
         </div>
 
         <div id="grid">
             <h3>Grids</h3>
-            <p>Include a grid for desktop and responsive layouts.</p>
+            <p>Tablet & IPad site padding is between 0.5em 4em 0.5em 4em and 0.45em 2.4em 0.45em 2.4em</p>
             <div id="grid-wrapper">
                 <div>
                     <h4>Desktop Grid</h4>
                     <img src="images/desktop-grid.png">
-                    <p>This is information about it. How big and site padding</p>
+                    <p>Desktop site padding is 0.5em 10em 0.5em 10em</p>
+                    <p>The Desktop site has a grid of about 12vw.</p>
                 </div>
                 <div>
                     <h4>Mobile Grid</h4>
                     <img src="images/mobile-grid.png">
-                    <p>This is information about it. How big and site padding</p>
+                    <p>Mobile site padding is 0.4em 1em 0.4em 1em</p>
+                    <p>The Mobile site has a grid of about 6vw.</p>
+                    </p>
                 </div>
             </div>
         </div>
@@ -186,22 +183,22 @@
         <div id="button-link">
             <div>
                 <h3>Buttons & Links</h3>
-                <p> Include interactive hover states anddimensions.</p>
+                <p>Buttons  have a min-height of 3em, min-width of 14em, and with a padding of 1em. </p>
+                <p>Hovering states will lighten/darken the buttons text depending on the background color.</p>
+                <p>Include interactive hover states anddimensions. Iconography Buttons shown on the <a href="more.html"><button class="textlinkbutton">More Page.</button></a></p>
             </div>
             <div id="button-wrapper">
                 <div>
                     <a><button class="signup-button">SIGN UP</button></a>
-                    <p>This is when and where this would be used</p>
+                    <p>The Salmon pink button would be used for secondary actions, such as signing up for the newspaper.</p>
                 </div>
                 <div>
                     <a><button class="addtobag-button">ADD TO BAG</button></a>
-                    <p>This is when and where this would be used</p>
-
+                    <p>The Ink black button would be used for prominent actions, such as adding to shopping bag or purchase.</p>
                 </div>
                 <div>
                     <a><button class="textlinkbutton">Example Text</button></a>
-                    <p>This is when and where this would be used</p>
-
+                    <p>The in-text link would be used for external links.</p>
                 </div>
             </div>
         </div>
