@@ -653,6 +653,10 @@ footer ol a {
         display: block;
     }
 
+    #type-description p {
+        margin-bottom: 1.2em;
+    }
+
     footer {
         grid-template-columns: 1fr 1fr;
         gap: 1em;
@@ -773,6 +777,8 @@ footer ol a {
         font-size: 0.88rem;
         margin: 0;
         padding: 0;
+        line-height: 1.4em;
+        margin: 0.5em 0em 0.5em 0em;
     }
 
     p small {
