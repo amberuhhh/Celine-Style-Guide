@@ -10,15 +10,6 @@
     --black-colour:#1D1D1D;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --site-padding: 0.5em 10em 0.5em 10em;
-        --pink-colour:#EC9FA7; 
-        --pearl-colour:#F5F4EF;
-        --black-colour:#1D1D1D;
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -223,7 +214,7 @@ main > * {
 }
 
     /* LOGO */
-        #logo {
+        #logo, #elements {
             padding: var(--site-padding);
             display: grid;
             grid-template-columns: 1.4fr 0.8fr;
@@ -248,7 +239,7 @@ main > * {
         #colour .gallery {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 1em;
+            gap: 2em;
         }
 
         #colour .gallery ol {
@@ -469,6 +460,11 @@ main > * {
             background-color: var(--pearl-colour);
         }
 
+        #icon-buttons * {
+            font-size: 1.2em;
+            padding: 0.3em;
+        }
+
 
 
         /* Components, patterns, alerts, & modals */
@@ -525,7 +521,7 @@ main > * {
             width: 100%;
             gap: 4em;
             justify-content: space-between;
-            margin: 1em 0 3em 0;
+            margin: 1em 0 2em 0;
         }
 
         #cards {
@@ -546,7 +542,7 @@ main > * {
         }
 
         input {
-            max-width: 30em;
+            max-width: 32em;
             height: 2.6em;
             background-color: var(--pearl-colour);
             border: none;
@@ -556,7 +552,6 @@ main > * {
             display: grid;
             grid-template-columns: 1fr;
             gap: 1em;
-            /* max-width: 30em; */
         }
 
 
