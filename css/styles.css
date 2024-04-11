@@ -5,9 +5,18 @@
 
 :root {
     --site-padding: 0.5em 10em 0.5em 10em;
-    --pink-colour:#EC9FA7 !important; 
+    --pink-colour:#EC9FA7; 
     --pearl-colour:#F5F4EF;
     --black-colour:#1D1D1D;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --site-padding: 0.5em 10em 0.5em 10em;
+        --pink-colour:#EC9FA7; 
+        --pearl-colour:#F5F4EF;
+        --black-colour:#1D1D1D;
+    }
 }
 
 body {
