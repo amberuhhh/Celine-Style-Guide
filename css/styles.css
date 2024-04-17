@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
 
 :root {
-    --site-padding: 0.5em 10em 0.5em 10em;
+    --site-padding: 3.8em 10em 3.8em 10em;
+    --nav-padding: 0.5em 10em 0.5em 10em;
     --pink-colour:#EC9FA7; 
     --pearl-colour:#F5F4EF;
     --black-colour:#1D1D1D;
@@ -63,7 +64,6 @@ p {
 
 p small {
     font-size: 0.80em;
-    /* padding-bottom: 20em; */
 }
 
 
@@ -165,7 +165,7 @@ nav {
     top: 0;
     align-items: center;
     border-bottom: var(--black-colour) solid 0.2em;
-    padding: var(--site-padding);
+    padding: var(--nav-padding);
 }
 
 .nav-bottom {
@@ -218,8 +218,8 @@ main {
     display: block;
 }
 
-main > * {
-    margin: 2em 0em 2em 0em;
+.main-block {
+    padding: var(--site-padding);
 }
 
 .gallery {
@@ -231,7 +231,6 @@ main > * {
 
     /* LOGO */
         #logo, #elements {
-            padding: var(--site-padding);
             display: grid;
             grid-template-columns: 1.4fr 0.8fr;
             gap: 2em;
@@ -248,7 +247,6 @@ main > * {
 
     /* COLOUR */
         #colour {
-            padding: var(--site-padding);
             background-color: var(--pearl-colour);
         }
 
@@ -271,10 +269,6 @@ main > * {
 
 
         /* TYPOGRAPHY */
-        #type {
-            padding: var(--site-padding);
-        }
-
         #type-info {
             margin: 2em 0em 2em 0em;
             display: grid;
@@ -421,7 +415,6 @@ main > * {
 
         /* GRIDS */
         #grid {
-            padding: var(--site-padding);
             background-color: var(--pearl-colour);
         }
 
@@ -438,10 +431,6 @@ main > * {
 
 
         /* BUTTONS & LINKS */
-        #button-link {
-            padding: var(--site-padding);
-        }
-
         #button-wrapper * {
             margin-bottom: 1.2em;
         }
@@ -457,7 +446,6 @@ main > * {
 
         /* ICONOGRAPHY */
         #icon {
-            padding: var(--site-padding);
             background-color: var(--pearl-colour);
         }
 
@@ -469,11 +457,6 @@ main > * {
 
 
         /* Components, patterns, alerts, & modals */
-        #comp {
-            padding: var(--site-padding);
-            
-        }
-
         #comp-item-wrapper > div {
             margin: 1em 0 3em 0;
         }
@@ -512,7 +495,6 @@ main > * {
 
         /* DISPLAY CARDS */
         #cards {
-            padding: var(--site-padding);
             background-color: var(--pearl-colour); 
         }
 
@@ -538,10 +520,6 @@ main > * {
 
 
         /* ELEMENTS */
-        #elements {
-            padding: var(--site-padding);
-        }
-
         input {
             max-width: 32em;
             height: 2.6em;
@@ -562,8 +540,8 @@ main > * {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: var(--site-padding);
     background-color: var(--pearl-colour);
+    padding: var(--nav-padding);
 }
 
 footer * {
@@ -581,7 +559,7 @@ footer ol a {
 }
 
 #copyright {
-    padding: var(--site-padding);
+    padding: var(--nav-padding);
     margin: 0;
     color: white;
     height: 1.6em;
